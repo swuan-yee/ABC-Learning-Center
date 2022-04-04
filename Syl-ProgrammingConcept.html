@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABC Learning Centre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--Font for footer-->
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <!--font for carousel-->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <!--============== external css for footer ===============-->
+    <link rel="stylesheet" href="footer.css">
+    <!--============== end of external css for footer ==================-->
+
+
+
+    <style>
+        viewer-toolbar {
+            visibility: hidden;
+            white-space: nowrap;
+            z-index: 3;
+        }
+        
+        .right-btn {
+            z-index: 2;
+        }
+        
+        .vertical-menu {
+            width: 300px;
+        }
+        
+        .vertical-menu a {
+            background-color: #eee;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+        
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+        
+        .vertical-menu a.active {
+            background-color: skyblue;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--===== Navagation bar coding ==========-->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background:linear-gradient(59deg, #3A6073, #16222A);">
+
+        <a class="navbar-brand " href="Syl-Index.html">
+            <img src="logo.png " alt="logo" width="130"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Syl-Index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Syl-SiteMap.html">Site Map</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Courses
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Syl-IntroCS.html">Java Courses</a>
+
+                        <a class="dropdown-item" href="Syl-IntoWebCourse.html">Web Design Courses</a>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-JavaSchedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-Register.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-AboutCourse.html">About Courses</a>
+                    </li>
+
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" style="background: #3A6073;" type="submit">Search</button>
+            </form>
+        </div>
+
+    </nav>
+
+
+    <!--======= end of navagation bar coding ==========-->
+    <!--=========== starting coding of  course =================-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+                <br>
+                <div class="vertical-menu">
+                    <a href="Syl-IntroCS.html">Introduction of Computer System</a>
+                    <a href="Syl-ProgrammingConcept.html">Programming Concepts</a>
+                    <a href="Syl-DataTypes.html">Data Types</a>
+                    <a href="JavaStringMethod.html">Java String  and Method</a>
+
+                    <a href="JavaProject.html">Project...</a>
+
+                </div>
+            </div>
+
+            <div class="col-sm-9 col-md-9">
+                <br>
+
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-dividers-label">
+                        <li class="breadcrumb-item"><a href="Syl-IntroCS.html">Java Courses</a></li>
+                        <li class="breadcrumb-item"><a href="Syl-ProgrammingConcept.html">Programming Concepts and Introduction of Java</a></li>
+                    </ol>
+                </nav>
+                <br>
+                <ul>
+                    <li>
+                        <h4>Module Name: Java Courses</h4>
+                    </li>
+                    <li>
+                        <h4>Sub-course: Programming Concepts & Introduction of Java</h4>
+                    </li>
+                    <li>
+                        <h4>Trainer: Mr. Swuan Yee</h4>
+                    </li>
+                </ul>
+
+                <div class="graph-outline">
+                    <object style="width:100%; height: 600px;" data="ProgrammingConcept.pdf" type="application/pdf">
+                    <embed src="path/to/file.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf" />
+                    </object>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--=============end of  course coding ===================-->
+
+
+    <!--===============  starting footer ==============-->
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h5><u>Opening Hours</u></h5>
+                            <ul class="list-unstyled">
+                                <li><span><i class="fa fa-times"></i></span>
+                                    <a class="clock-time"><strong>Sunday : Closed</strong></a>
+                                </li>
+                                <li><span><i class="fa fa-check"></i></span>
+                                    <a><strong>Mon - Fri : 10am - 5pm</strong></a>
+                                </li>
+                                <li><span><i class="fa fa-check"></i></span>
+                                    <a><strong>Saturday: 10am - 4pm</strong></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column2-->
+                        <div class="footer-pad">
+                            <h5><u>Our Learning Center</u></h5>
+                            <ul class="list-unstyled">
+                                <li><strong><a href="Syl-AboutUs.html">About Us</a></strong></li>
+                                <li><strong><a href="Syl-ContactUs.html">Contact Us</a></strong></li>
+                                <li><strong><a href="Syl-PrivacyPolicy.html">Privacy Policy</a></strong></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column3-->
+                        <div class="footer-pad">
+                            <h5><u>Address</u></h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-location-arrow" style="font-size:27px"><a><strong> No.(71), Yadana
+                                                Street, PaukTaw, Insein, Yangon, Myanmar.</strong></a></i></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><u>Follow Us</u></h5>
+                        <ul class="social-network social-circle">
+                            <li><a href="https://www.facebook.com/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.twitter.com/" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2020 - ABC Learning Center. Created by Swuan Yee Lin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--===============  end of footer ==============-->
+
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABC Learning Centre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--Font for footer-->
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <!--font for carousel-->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <!--============== external css for footer ===============-->
+    <link rel="stylesheet" href="footer.css">
+    <!--============== end of external css for footer ==================-->
+
+    <style>
+        /*===== starting css for carousel ==================*/
+        
+        body {
+            margin: 0;
+            background-color: #b3dcdc;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        /*======= end of css for carousel =======*/
+        /*====== css coding for card ====*/
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+        
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        .card button:hover {
+            opacity: 0.7;
+        }
+        /*====== end of css coding ====*/
+        /*==== css coding for body to change background color*/
+        
+        body {
+            background-color: #b3dcdc;
+        }
+    </style>
+</head>
+
+<body>
+    <!--===== Navagation bar coding ==========-->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background:linear-gradient(59deg, #3A6073, #16222A);">
+
+        <a class="navbar-brand " href="Syl-Index.html">
+            <img src="logo.png " alt="logo" width="130"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Syl-Index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Syl-SiteMap.html">Site Map</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Courses
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Syl-IntroCS.html">Java Courses</a>
+
+                        <a class="dropdown-item" href="Syl-IntoWebCourse.html">Web Design Courses</a>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-JavaSchedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-Register.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-AboutCourse.html">About Courses</a>
+                    </li>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" style="background: #3A6073;" type="submit">Search</button>
+            </form>
+        </div>
+
+    </nav>
+
+
+
+
+
+
+    <!--======= end of navagation bar coding ==========-->
+
+
+
+    <!--=====carousel coding =========-->
+    <!--Carousel Wrapper-->
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100" style="width: auto; height: 650px;" src="ProgrammingJava.jpg" alt="1st slide">
+
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="h3-responsive">Programming with Java Courses</h2>
+                    <h4>Make professional java programmer to join this course.</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" style="width: auto; height: 650px;" src="Python.jpg" alt="2nd slide">
+
+                </div>
+                <div class="carousel-caption">
+                    <h2 class="h3-responsive">Programming with Python Courses</h2>
+                    <h4>Python is best for learning programming and we are here to support you</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" style="width: auto; height: 650px;" src="web.jpg" alt="3rd slide">
+
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Website design Courses</h3>
+                    <h4>Design make your perfect website</h4>
+                </div>
+            </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+        <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <!--====== end of carousel coding =========-->
+
+    <!-- ========making animate welcome message with marquee tag =========-->
+    <center>
+        <div class="container">
+
+            <marquee width="80%" direction="left" height="90px" style="color: #000000; font-size: 40px;">
+                Welcome to our ABC Learning Center Website
+            </marquee>
+        </div>
+    </center><br>
+    <!-- ======= end of making anmiated welcome message with marquee tag =======-->
+
+    <!-- ====== starting cards coding ======= -->
+    <div class="container">
+        <!--1st row-->
+        <div class="row">
+
+            <div class="col-sm-4 col-md-4 col-sm-4">
+
+                <h2 style="text-align:center">About Java</h2>
+
+                <div class="card" style="width: 500px; height: 500px;">
+                    <img src="java.png" alt="Java" style="width:300px" height="300px">
+                    <h3>Programming with Java Course</h3>
+
+                    <p>Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <a href=""><button>Read More</button></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-sm-4">
+                <h2 style="text-align:center">About Python</h2>
+
+                <div class="card" style="width: 500px; height: 500px;">
+                    <img src="python.jpeg" alt="Java" style="width:300px" height="300px">
+                    <h3>Programming with Python Course</h3>
+
+                    <p>Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <a href=""><button>Read More</button></a>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-sm-4">
+                <h2 style="text-align:center">Website Design</h2>
+
+                <div class="card" style="width: 500px; height: 500px;">
+                    <img src="webDesign.jpg" alt="Java" style="widows: 300px;" height="300px">
+                    <h3>About Website Design Course</h3>
+
+                    <p>Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+                    <a href="Syl-WebSchedule.html"><button>Read More</button></a>
+                </div>
+            </div>
+        </div><br><br>
+        <!--2nd row-->
+
+    </div>
+
+    <!--===============  starting footer ==============-->
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h5><u>Opening Hours</u></h5>
+                            <ul class="list-unstyled">
+                                <li><span><i class="fa fa-times"></i></span>
+                                    <a class="clock-time"><strong>Sunday : Closed</strong></a>
+                                </li>
+                                <li><span><i class="fa fa-check"></i></span>
+                                    <a><strong>Mon - Fri : 10am - 5pm</strong></a>
+                                </li>
+                                <li><span><i class="fa fa-check"></i></span>
+                                    <a><strong>Saturday: 10am - 4pm</strong></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column2-->
+                        <div class="footer-pad">
+                            <h5><u>Our Learning Center</u></h5>
+                            <ul class="list-unstyled">
+                                <li><strong><a href="Syl-AboutUs.html">About Us</a></strong></li>
+                                <li><strong><a href="Syl-ContactUs.html">Contact Us</a></strong></li>
+                                <li><strong><a href="Syl-PrivacyPolicy.html">Privacy Policy</a></strong></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column3-->
+                        <div class="footer-pad">
+                            <h5><u>Address</u></h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-location-arrow" style="font-size:27px"><a><strong> No.(71), Yadana
+                                                Street, PaukTaw, Insein, Yangon, Myanmar.</strong></a></i></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><u>Follow Us</u></h5>
+                        <ul class="social-network social-circle">
+                            <li><a href="https://www.facebook.com/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.twitter.com/" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2020 - ABC Learning Center. Created by Swuan Yee Lin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--===============  end of footer ==============-->
+
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABC Learning Centre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--Font for footer-->
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <!--font for carousel-->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <!--============== external css for footer ===============-->
+    <link rel="stylesheet" href="footer.css">
+    <!--============== end of external css for footer ==================-->
+
+
+    <style>
+        /*===== starting css for carousel ==================*/
+        
+        .carousel-caption,
+        h2 {
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        /*======= end of css for carousel =======*/
+        /*====== css coding for card ====*/
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+        
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        .card button:hover {
+            opacity: 0.7;
+        }
+        /*====== end of css coding ====*/
+        /*==== css coding for body to change background color*/
+        
+        body {
+            background-color: #b3dcdc;
+        }
+        /*=====css coding for register form coding======*/
+        
+        .divider-text {
+            position: relative;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .divider-text span {
+            padding: 7px;
+            font-size: 12px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .divider-text:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            top: 55%;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .btn-facebook {
+            background-color: #405D9D;
+            color: #fff;
+        }
+        
+        .btn-twitter {
+            background-color: #42AEEC;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--===== Navagation bar coding ==========-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background:linear-gradient(59deg, #3A6073, #16222A);">
+
+        <a class="navbar-brand " href="Syl-Index.html">
+            <img src="logo.png " alt="logo" width="130"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Syl-Index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Syl-SiteMap.html">Site Map</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Syl-IntroCS.html">Java Courses</a>
+                        <a class="dropdown-item" href="Syl-IntoWebCourse.html">Web Design Courses</a>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-JavaSchedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-Register.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-AboutCourse.html">About Courses</a>
+                    </li>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" style="background: #3A6073;" type="submit">Search</button>
+            </form>
+        </div>
+
+    </nav>
+
+
+
+
+
+
+    <!--======= end of navagation bar coding ==========-->
+    <!--=========== starting coding of register form =================-->
+    <form name="register" onsubmit="return validate()" method="POST">
+        <div class="container"><br><br><br>
+
+
+            <article class="card-body mx-auto" style="max-width:600px; text-align: center;">
+                <h3 class="card-title mt-3 text-center">Sign Up</h3>
+                <p class="text-center">Get started with your free account</p>
+                <p>
+                    <a href="" class="btn btn-block btn-twitter"> <i class="fa fa-twitter"></i>   Signup with Twitter
+                    </a>
+                    <a href="" class="btn btn-block btn-facebook"> <i class="fa fa-facebook-f"></i>   Signup with facebook
+                    </a>
+                </p>
+                <p class="divider-text">
+                    <span class="bg-light">OR</span>
+                </p>
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input name="first" class="form-control" placeholder="First Name" id="fn">
+                    <p id="error_firstname" style="color:red;"></p>
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input name="last" class="form-control" placeholder="Last Name" id="ln">
+                    <p id="error_lastname" style="color:red;"></p>
+                </div>
+
+                <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                    </div>
+                    <input name="mail" class="form-control" placeholder="Email address" id="em">
+                    <p id="error_email" style="color:red;"></p>
+                </div>
+                <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                    </div>
+                    <select class="custom-select" style="max-width: 100px;">
+                        <option selected="">+95</option>
+                        <option value="1">+65</option>
+                        <option value="2">+91</option>
+                        <option value="3">+86</option>
+                    </select>
+                    <input name="phone" class="form-control" placeholder="Phone number" type="contact" id="cn">
+                    <p id="error_contact" style="color:red;"></p>
+                </div>
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input name="pw1" class="form-control" placeholder="Create password" type="password" id="pass1">
+                    <p id="error_password1" style="color:red;"></p>
+                </div>
+                <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input name="pw2" class="form-control" placeholder="Re-enter password" type="password" id="pass2">
+                    <p id="error_password2" style="color:red;"></p>
+                </div>
+                <!-- form-group// -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-dark btn-block">Sign Up</button>
+
+                </div>
+                <!-- form-group// -->
+                <p class="text-center">Do you have learning centre account?<a href="Syl-Login.html">Log In</a> </p>
+
+            </article>
+
+            <!-- card.// -->
+
+        </div>
+
+    </form>
+
+
+    <!--=============end of registeration form coding ===================-->
+
+
+    <!--===============  starting footer ==============-->
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h5><u>Opening Hours</u></h5>
+                            <ul class="list-unstyled">
+                                <li><span><i class="fa fa-times"></i></span>
+                                    <a class="clock-time"><strong>Sunday : Closed</strong></a>
+                                </li>
+                                <li><span><i class="fa fa-check"></i></span>
+                                    <a><strong>Mon - Fri : 10am - 5pm</strong></a>
+                                </li>
+                                <li><span><i class="fa fa-check"></i></span>
+                                    <a><strong>Saturday: 10am - 4pm</strong></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column2-->
+                        <div class="footer-pad">
+                            <h5><u>Our Learning Center</u></h5>
+                            <ul class="list-unstyled">
+                                <li><strong><a href="Syl-AboutUs.html">About Us</a></strong></li>
+                                <li><strong><a href="Syl-ContactUs.html">Contact Us</a></strong></li>
+                                <li><strong><a href="Syl-PrivacyPolicy.html">Privacy Policy</a></strong></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column3-->
+                        <div class="footer-pad">
+                            <h5><u>Address</u></h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-location-arrow" style="font-size:27px"><a><strong> No.(71), Yadana
+                                                Street, PaukTaw, Insein, Yangon, Myanmar.</strong></a></i></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><u>Follow Us</u></h5>
+                        <ul class="social-network social-circle">
+                            <li><a href="https://www.facebook.com/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.twitter.com/" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2020 - ABC Learning Center. Created by Swuan Yee Lin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--===============  end of footer ==============-->
+
+
+    <script>
+        function validate() {
+
+            // alert("Hello");
+            var valid = true;
+            var first = document.forms["register"]["first"].value;
+            var last = document.forms["register"]["last"].value;
+            var pw1 = document.forms["register"]["pw1"].value;
+            var pw2 = document.forms["register"]["pw2"].value;
+            var email = document.forms["register"]["mail"].value;
+
+            // alert(first);
+
+
+            if (first == "") {
+                // alert("Hello");
+                document.getElementById("error_firstname").innerHTML = "**Please input user first name**";
+                return false;
+            } else if (last == "") {
+
+                document.getElementById("error_lastname").innerHTML = "**Please input user last name**";
+                return false;
+            } else if (email == "") {
+                document.getElementById("error_email").innerHTML = "**Please enter your email address**";
+                return false;
+            } else if (pw1 == "") {
+                document.getElementById("error_password1").innerHTML = "**Please insert the new password**";
+                return false;
+            } else if (pw2 == "") {
+                document.getElementById("error_password2").innerHTML = "**Please retype your password again**";
+                return false;
+            } else {
+                // var dataString = 'name1=' + first + 'name2=' + last + 'email1=' + email + 'phone1=' + phoneno + 'password1=' + pw1 + 'password2=' + pw2;
+                $.ajax({
+                    type: "POST",
+                    url: "action.php",
+                    data: {
+                        fname: first,
+                        lname: last,
+                        pwd1: pw1,
+                        pwd2: pw2,
+                        uemail: email,
+                    },
+                    success: function(result) {
+                        alert(result);
+                        window.location.replace('Syl-Thankyou.php');
+
+
+                    }
+                });
+                // alert("hello");
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

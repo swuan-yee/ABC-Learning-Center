@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABC Learning Centre</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--Font for footer-->
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <!--font for carousel-->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <!--========= footer external css ================-->
+    <link rel="stylesheet" href="footer.css">
+    <!--================ end of footer external css ======================-->
+    <style>
+        body {
+            margin: 0;
+            background-color: #b3dcdc;
+        }
+        /*==== starting css coding for contact us session ======*/
+        
+        .box {
+            background-image: url("ProgrammingJava.jpg");
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .text {
+            padding: 100px 0;
+        }
+        
+        .box p {
+            font-size: 18px;
+        }
+        
+        .red {
+            color: orangered;
+        }
+        
+        .redline {
+            width: 100px;
+            height: 3px;
+            background-color: red;
+            border: none;
+        }
+        
+        .touch h2 {
+            padding-top: 20px;
+            text-align: center;
+        }
+        
+        .form-margin {
+            margin-top: 40px;
+        }
+        
+        .left {
+            text-align: left;
+        }
+        
+        h3 {
+            font-variant: bold;
+        }
+        
+        .redline-address {
+            border: none;
+            height: 3px;
+            background-color: orangered;
+            width: 140px;
+            margin-bottom: 20px;
+        }
+        
+        .address {
+            padding-top: 50px;
+        }
+        
+        .address p {
+            font-weight: bold;
+            color: #676565;
+            margin: 3px;
+        }
+        
+        .bottom-gap {
+            margin-bottom: 100px;
+        }
+        /*validation css*/
+        
+        input.ng-valid {
+            background-color: #dff0d8;
+        }
+        
+        input.ng-invalid {
+            background-color: #f2dede;
+        }
+        
+        input.ng-pristine {
+            background-color: white;
+        }
+        
+        textarea.ng-invalid {
+            background-color: #f2dede;
+        }
+        
+        textarea.ng-pristine {
+            background-color: white;
+        }
+        
+        textarea.ng-valid {
+            background-color: #dff0d8;
+        }
+        /*===== ending css coding for contact us session ======*/
+    </style>
+
+
+</head>
+
+<body>
+    <!--===== Navagation bar coding ==========-->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background:linear-gradient(59deg, #3A6073, #16222A);">
+
+        <a class="navbar-brand " href="Syl-Index.html">
+            <img src="logo.png " alt="logo" width="130"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Syl-Index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Syl-SiteMap.html">Site Map</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Courses
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Syl-IntroCS.html">Java Courses</a>
+                        <a class="dropdown-item" href="Syl-IntoWebCourse.html">Web Design Courses</a>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-JavaSchedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-Register.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Syl-AboutCourse.html">About Courses</a>
+                    </li>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" style="background: #3A6073;" type="submit">Search</button>
+            </form>
+        </div>
+
+    </nav>
+    <!--======= end of navagation bar coding ==========-->
+    <!--========== starting contact us session ====================-->
+    <div class="box">
+
+        <div class="text">
+            <h1>Contact <span class="red">Us</span></h1>
+            <hr class="redline">
+            <p>Do you have any questions? We are ready to answer your questions.</p>
+        </div>
+    </div>
+
+    <div class="touch">
+        <h2>Sent feedback here</h2>
+        <hr class="redline">
+    </div>
+
+    <form action="" method="POST" name="contact-form">
+        <div class="container form-margin">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name" ng-model="firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="ID Number" ng-model="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone" ng-model="phone" name="firstname" required>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name" ng-model="lastname" name="lastname" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-mail" ng-model="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Course Name" ng-model="course" name="course" required>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="6" placeholder="Message" ng-model="message" name="message" required></textarea>
+                    </div>
+                    <div class="pager">
+                        <button type="submit" class="btn btn-dark">SEND MESSAGE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+
+        </div>
+    </form>
+
+    <!--address-->
+
+    <div class="container address">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h3>Our Address</h3>
+                <div class="redline-address"></div>
+                <div class="fa fa-map-marker" style="font-size:20px;">
+                    <a>&nbsp;&nbsp; No. 71, Yadana Street,</a>
+                    <a>Pauk Taw, Insein,</a>
+                    <a>Yangon,</a>
+                    <a>Myanmar.</a>
+                </div><br><br>
+
+
+
+                <div class="fa fa-envelope " style="font-size: 20px;">
+                    <a><span class="glyphicon glyphicon-envelope "> </span>&nbsp;&nbsp; swuan010719@hotmail.com</a>
+
+                </div><br><br>
+                <div class="fa fa-phone " style="font-size: 20px;">
+                    <a><span class="glyphicon glyphicon-phone "></span>&nbsp;&nbsp; +95 7997 43 202</a>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <br>
+                <!--map-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.6116217313615!2d96.17499784436352!3d16.795987381674585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eda4a55c1917%3A0x958e638a3764fd5!2sABC%20Learning%20Center!5e0!3m2!1sen!2smm!4v1603014056873!5m2!1sen!2smm "
+                    width="100% " height="450 " frameborder="0 " style="border:0; " allowfullscreen=" " aria-hidden="false " tabindex="0 "></iframe>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="bottom-gap "></div>
+    <!--=========== end of contact us session ======================-->
+
+
+    <!--===============  starting footer ==============-->
+    <footer class="mainfooter " role="contentinfo ">
+        <div class="footer-middle ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-3 col-sm-6 ">
+                        <!--Column1-->
+                        <div class="footer-pad ">
+                            <h5><u>Opening Hours</u></h5>
+                            <ul class="list-unstyled ">
+                                <li><span><i class="fa fa-times "></i></span>
+                                    <a class="clock-time "><strong>Sunday : Closed</strong></a>
+                                </li>
+                                <li><span><i class="fa fa-check "></i></span>
+                                    <a><strong>Mon - Fri : 10am - 5pm</strong></a>
+                                </li>
+                                <li><span><i class="fa fa-check "></i></span>
+                                    <a><strong>Saturday: 10am - 4pm</strong></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 ">
+                        <!--Column1-->
+                        <div class="footer-pad ">
+                            <h5><u>Our Learning Center</u></h5>
+                            <ul class="list-unstyled ">
+                                <li><strong><a href="Syl-AboutUs.html ">About Us</a></strong></li>
+                                <li><strong><a href="Syl-ContactUs.html ">Contact Us</a></strong></li>
+                                <li><strong><a href="Syl-PrivacyPolicy.html ">Privacy Policy</a></strong></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 ">
+                        <!--Column1-->
+                        <div class="footer-pad ">
+                            <h5><u>Address</u></h5>
+                            <ul class="list-unstyled ">
+                                <li><i class="fa fa-location-arrow " style="font-size:27px "><a><strong>  No.(71), Yadana Street, PaukTaw, Insein, Yangon, Myanmar.</strong></a></i></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <h5><u>Follow Us</u></h5>
+                        <ul class="social-network social-circle ">
+                            <li><a href="https://www.facebook.com/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.twitter.com/" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 copy ">
+                        <p class="text-center ">&copy; Copyright 2020 - ABC Learning Center. Created by Swuan Yee Lin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--===============  end of footer ==============-->
+
+</body>
+
+</html>
